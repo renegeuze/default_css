@@ -1,0 +1,121 @@
+/*[fmt]0A10-00AA-364*/
+/*Default stylesheet by HaRRy
+http://geuze.name*/
+html{
+ font:10px/1em sans-serif; overflow-y:scroll;
+}
+*{
+ margin:0; padding:0;
+}
+a{
+ cursor:pointer; text-decoration:underline;
+}
+iframe, img{
+ border:0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+ display:block;
+}
+table{
+ border-collapse:collapse; border-spacing:0;
+}
+td, th{
+ border:1px solid #AAA; padding:1px 4px 1px 3px; text-align:left;
+}
+thead tr:last-child th{
+ border-bottom-width:2px;
+}
+tfoot tr:first-child td, tfoot tr:first-child th{
+ border-top-width:2px;
+}
+caption, figcaption{
+ text-align:left; padding:1px 0 1px 4px; font-style:oblique;
+}
+input, textarea{
+ width:150px;
+}
+textarea{
+ height:70px;
+}
+button, input[type=button], input[type=submit], input[type=reset]{
+ padding:0 5px; width:auto; min-width:65px; vertical-align:middle; height:2em; font:12px/1.5em sans-serif;
+}
+input[type=radio], input[type=checkbox]{
+ width:auto;
+}
+h1, h2, h3, h4, h5, h6{
+ font-weight:normal;
+}
+h1{
+ font:3em/1em sans-serif;
+}
+h2{
+ font:2.5em/1em sans-serif;
+}
+h3{
+ font:2em/1em sans-serif;
+}
+h4{
+ font:1.5em/1em sans-serif;
+}
+h5{
+ font:1.25em/1em sans-serif;
+}
+h6{
+ font:1em/1em sans-serif;
+}
+p{
+ font:1em/1.25em sans-serif;
+}
+dt, th{
+ font-weight:bolder;
+}
+dd{
+ padding-left:1em;
+}
+fieldset{
+ padding:5px;
+}
+fieldset legend{
+ margin-left:-3px; padding:3px;
+}
+hr{
+ width:90%; margin:0 auto; color:#BDBDBD; border:1px inset #000;
+}
+ul, ol{
+ padding-left:25px;
+}
+ul ul, ul ol, ol ul, ol ol{
+ padding-left:10px;
+}
+nav ul, #nav ul, .nav ul{
+ list-style:none; padding:0;
+}
+nav li a, #nav li a, .nav li a{
+ white-space:nowrap;
+}
+header noscript{
+ position:absolute; width:50%; background:#FAFFBD; top:0; left:50%; margin-left:-25%; padding:10px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+}
+/*Print style sheet*/
+@media print{
+ html, body, body>* {
+  margin:0;  width:100%;
+ }
+
+}
+@media print{
+ a[href]:after {
+  content:" (" attr(href) ") ";  font-size:90%;
+ }
+
+}
+@media print{
+ nav a[href]:after, #nav a[href]:after, .nav a[href]:after {
+  content:"";
+ }
+
+}
+/*a[href^="/"]:after {
+content: " (http://example.com" attr(href) ") "
+}*/

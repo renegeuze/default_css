@@ -1,0 +1,12 @@
+html,body,body>*{
+ margin:0;width:100%
+}
+a[href]:after {
+ content: " (" attr(href) ") "; font-size: 90%
+}
+nav a[href]:after{
+ content:"";
+}
+/*a[href^="/"]:after {
+ content: " (http://example.com" attr(href) ") "
+}*/

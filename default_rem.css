@@ -1,0 +1,74 @@
+/*[fmt]0A10-00AA-364*/
+/*Default stylesheet by HaRRy
+http://geuze.name
+Plugin for REM font-sizing. Define after default
+*/
+
+td, th{
+ padding:0.1rem 0.4rem 0.1rem 0.3rem
+}
+caption, figcaption{
+ padding:0.1rem 0 0.1rem 0.4rem
+}
+input, textarea{
+ width:12rem; font:1rem/1rem sans-serif
+}
+textarea{
+ height:8rem; width:18rem
+}
+button, input[type=button], input[type=submit], input[type=reset]{
+ padding:0 0.4rem; min-width:5rem; height:2rem; font:1rem/1.5rem sans-serif
+}
+
+h1{
+ font:3rem/3rem sans-serif
+}
+h2{
+ font:2.5rem/2.5rem sans-serif
+}
+h3{
+ font:2rem/2rem sans-serif
+}
+h4{
+ font:1.5rem/1.5rem sans-serif
+}
+h5{
+ font:1.25rem/1.25rem sans-serif
+}
+h6{
+ font:1rem/1rem sans-serif
+}
+p{
+ font:1rem/1.4rem sans-serif
+}
+p+p{
+ padding-top:1rem
+}
+
+dd{
+ padding-left:1rem
+}
+fieldset{
+ padding:0.5rem
+}
+legend{
+ margin-left:-0.3rem; padding:0.3rem
+}
+ul, ol{
+ padding-left:2rem
+}
+ul ul, ul ol, ol ul, ol ol{
+ padding-left:0.8rem
+}
+
+header noscript{
+ width:20rem; padding:1rem
+}
+
+/*Print style sheet*/
+@media print{
+
+ a[href]:after {
+  font-size:0.9rem
+ }
+}
