@@ -19,7 +19,7 @@ a{
 iframe, img{
  border:0; vertical-align:bottom
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, main{
  display:block
 }
 datalist{
