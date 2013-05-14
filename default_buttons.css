@@ -1,18 +1,60 @@
-.button,input[type=submit],button,input[type=button] {
- display: inline-block; min-width: 75px; font: 12px/12px sans-serif; height: 22px; text-decoration: none; vertical-align: middle; background-color: #DDD; background: #EEE url('./button_gradient.png') repeat-x -5px; border: 1px solid #000; border-color: #D7D7D7 #BCBCBC #BCBCBC #D7D7D7; color: #404040; padding: 0 5px; text-align: center; text-shadow: 1px 1px 0 #E1E1E1; cursor: pointer; border-radius: 2px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;
+BUTTON::-moz-focus-inner
+{
+	border: 0;
 }
-.button {
- line-height: 22px;
+BUTTON
+{
+	display: inline-block;
+	border: 1px solid #D7D7D7;
+	border-color: #D7D7D7 #BCBCBC #BCBCBC #D7D7D7;
+	color: #333;
+	padding: 0 5px;
+	text-shadow: 1px 1px 1px #D7D7D7;
+	cursor: pointer;
+	border-radius: 2px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: inherit;
+	overflow: visible;
+	vertical-align: bottom;
+	line-height: inherit;
+	position: relative;
+	background: #FFFFFF;
+	background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#eeeeee 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
 }
-.button:hover,input[type=submit]:hover,button:hover,input[type=button]:hover {
- background: url('./button_gradient.png') bottom; -webkit-box-shadow: rgba(125, 190, 255, 0.5) 0 0 5px; -moz-box-shadow: rgba(125, 190, 255, 0.5) 0 0 5px; box-shadow: 0 0 5px rgba(125, 190, 255, 0.5); border-color: #99CCFF; color: #333333;
+BUTTON:hover
+{
+	box-shadow: 1px 1px 2px rgba(195, 194, 194, 0.5);
+	border-color: #C3C2C2;
+	color: #333333;
 }
-.button:active,input[type=submit]:active,button:active {
-
+BUTTON:focus
+{
+	border-color: #8FC7FF #94C9FF #94C9FF #8FC7FF;
+	color: #333333;
+	text-shadow: 1px 1px 1px #C3C2C2;
 }
-.button:focus,input[type=submit]:focus,button:focus {
- background-color: #EEE; border-color: #8FC7FF #94C9FF #94C9FF #8FC7FF; color: #1A1A1A; text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5);
+BUTTON:active
+{
+	top: 1px;
+	left: 1px;
+	z-index: 1;
 }
-.button[disabled],input[type=submit][disabled],button[disabled],input[type=button][disabled] {
- background: #E1E1E1; cursor: default; box-shadow: none; border: 1px solid #C3C2C2; color: #4E4E4E;
+BUTTON[disabled], BUTTON[disabled]:hover
+{
+	background: #D7D7D7;
+	cursor: default;
+	box-shadow: none;
+	border: 1px solid #C3C2C2;
+	color: #777;
+	top: 0;
+	left: 0;
+	z-index: auto;
 }
